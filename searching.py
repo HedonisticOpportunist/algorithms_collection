@@ -15,7 +15,7 @@ class Searching:
 
     @staticmethod
     def display_result(result):
-        if result != - 1:
+        if result == - 1:
             print("***********")
             print("Element is not present in array")
         else:
