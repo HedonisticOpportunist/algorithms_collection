@@ -13,7 +13,15 @@ class Sorting:
                 j -= 1
                 array[j + 1] = shift
         return self.show_array(array)
-    
+
+    def bubble_sort(self, array):
+        for i in range(len(array)):
+            for j in range(0, len(array) - 1):
+                if array[j] > array[j + 1]:
+                    array[j], array[j + 1] = array[j+1], array[j]
+
+            return self.show_array(array)
+
     @staticmethod
     def show_array(array):
         """
@@ -22,3 +30,4 @@ class Sorting:
         """
         for i in range(len(array)):
             print("% d" % array[i])
+        print("--(.=^・ェ・^=)--")
